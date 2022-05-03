@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class ShoppingCartTest {
 
     @Test
-    public void givenANewShoppingCart_whenIsEmpty_thenTrueIsReturned() {
+    public void givenANewShoppingCart_whenIsEmpty_thenTrueIsReturned()  throws EmptyShoppingCartException{
         // Given:
         ShoppingCart shoppingCart = new ShoppingCart();
 

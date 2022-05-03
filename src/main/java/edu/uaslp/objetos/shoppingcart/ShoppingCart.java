@@ -37,6 +37,10 @@ public class ShoppingCart {
         return items;
     }
 
-    public void removeItem(String itemCode1) throws ItemNotFoundException {
+    public void removeItem(String itemCode1) throws ItemNotFoundException{
+        int index=0;
+        for(Item item:items)
+            if(item.getCode() == itemCode1)
+                items.remove(item);
     }
 }
