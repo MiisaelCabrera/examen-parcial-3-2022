@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class ShoppingCartTest {
 
     @Test
-    public void givenANewShoppingCart_whenIsEmpty_thenTrueIsReturned()  throws EmptyShoppingCartException{
+    public void givenANewShoppingCart_whenIsEmpty_thenTrueIsReturned() {
         // Given:
         ShoppingCart shoppingCart = new ShoppingCart();
 
@@ -266,7 +266,7 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void givenAShoppingCartWithItems_whenRemoveItemWithQuantity1_thenItemIsRemoved() throws ItemNotFoundException {
+    public void givenAShoppingCartWithItems_whenRemoveItemWithQuantity1_thenItemIsRemoved() throws ItemNotFoundException{
         // Given:
         ShoppingCart shoppingCart = new ShoppingCart();
         String itemCode1 = "98234291";

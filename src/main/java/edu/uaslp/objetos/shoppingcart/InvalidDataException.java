@@ -1,8 +1,8 @@
 package edu.uaslp.objetos.shoppingcart;
 
-public class InvalidDataException extends Exception{
+public class InvalidDataException extends RuntimeException{
 
-    public InvalidDataException(){
-        super("Data is Invalid");
+    public InvalidDataException(String message){
+        super(message);
     }
 }

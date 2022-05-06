@@ -1,8 +1,8 @@
 package edu.uaslp.objetos.shoppingcart;
 
-public class EmptyShoppingCartException extends Exception {
+public class EmptyShoppingCartException extends RuntimeException {
 
-    public EmptyShoppingCartException(){
-        super("Cart is Empty");
+    public EmptyShoppingCartException( String message){
+        super(message);
     }
 }

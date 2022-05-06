@@ -14,6 +14,9 @@ public class Item {
 
     public Item( String code, String providerCode,BigDecimal unitCost,int quantity)
     {
+        if (quantity < 0 || quantity > 5) {
+            throw new InvalidDataException("Quantity must be greater than zero and lower than 5");
+        }
         this.code=code;
         this.providerCode=providerCode;
         this.unitCost=unitCost;
